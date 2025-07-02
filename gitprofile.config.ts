@@ -52,8 +52,8 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
-    description: '',
+    title: '肖俊平的主页 - The Github page of JunPing Xiao',
+    description: '华南理工大学计算机科学与工程学院学生肖俊平的个人主页，分享学习笔记、项目经验和技术博客',
     imageURL: '',
   },
   social: {
@@ -222,7 +222,11 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `<code>// Made with passion, growing with code →</code> `,
+  footer: `<div id="tech-footer" style="font-family: monospace; color: #7fdbff; background-color: #111; padding: 8px 12px; border-radius: 3px;">
+  [<span style="color: #ff851b">$(date +"%T")</span>] <span style="color: #39cccc">DEBUG</span> | ${"Made with passion, growing with code".split('').map((c,i) => 
+    `<span style="color: hsl(${(i*10)%360}, 80%, 70%)">${c}</span>`
+  ).join('')}
+</div>`,
 
   enablePWA: true,
 };
