@@ -222,11 +222,17 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `<div id="tech-footer" style="font-family: monospace; color: #7fdbff; background-color: #111; padding: 8px 12px; border-radius: 3px;">
-  [<span style="color: #ff851b">$(date +"%T")</span>] <span style="color: #39cccc">DEBUG</span> | ${"Made with passion, growing with code".split('').map((c,i) => 
-    `<span style="color: hsl(${(i*10)%360}, 80%, 70%)">${c}</span>`
+  footer: `
+<div style="font-family: monospace; background-color: #111; padding: 8px 12px; border-radius: 3px; display: inline-block; transition: all 0.3s;">
+  ${"Made with passion, growing with code".split('').map((c,i) => 
+    `<span 
+      style="color: hsl(${(i*10)%360}, 80%, 70%); transition: all 0.2s;"
+      onmouseover="this.style.textShadow='0 0 5px currentColor'"
+      onmouseout="this.style.textShadow='none'"
+    >${c}</span>`
   ).join('')}
-</div>`,
+</div>
+`,
 
   enablePWA: true,
 };
