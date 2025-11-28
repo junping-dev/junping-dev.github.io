@@ -74,7 +74,7 @@ const CONFIG = {
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    notes: 'https://junping-dev.github.io/notes/',
+    website: 'https://junping-dev.github.io/notes/',
     phone: '',
     email: 'xjp.io@qq.com',
   },
@@ -85,7 +85,8 @@ const CONFIG = {
   skills: [
     'C++',
     'Python',
-    'Pytorch',
+    'PyTorch',
+    'Transformers',
     'MySQL',
     'Git',
     'Docker',
